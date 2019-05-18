@@ -16,7 +16,7 @@ export default class App extends React.Component {
     this.performSearch();
   }
 
-  performSearch = (query = "jaguar") => {
+  performSearch = (query = "canada") => {
     const API_KEY = process.env.REACT_APP_UNSPLASH_KEY;
     axios
       .get(
