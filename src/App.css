@@ -1,33 +1,56 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font: 1em/1.5 "Roboto", sans-serif;
+  color: #4c4c4c;
+  background: #f6f7f7;
+  padding-bottom: 3em;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carouselMain {
+  width: 100%;
+}
+
+.titleSearchContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  padding: 30px 40px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.carouselItem {
+  align-content: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  background-color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.carouselItem img {
+  margin: auto;
+  width: auto;
+  max-height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+  .titleSearchContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .carouselItem img {
+    margin: auto;
+    width: auto;
+    max-height: 200px;
   }
 }
